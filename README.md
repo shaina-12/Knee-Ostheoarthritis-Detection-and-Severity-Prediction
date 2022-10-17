@@ -3,7 +3,7 @@ This Repository is under development. It will be developted tentatively on March
 ## Authors:
 ### Anjali Gaur
 ### Shaina Mehta
-### Rakshit Valia
+### Rakshit Walia
 ## Submitted To:
 ### Prof. (Dr.) M. Parthasarathi
 ## Guided By:
