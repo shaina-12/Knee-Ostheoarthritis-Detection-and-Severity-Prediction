@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<div class="position-relative overflow-hidden p-1 p-md-2 m-md-1 text-left bg-light" style="color:blue;  background: url('https://thumbs.dreamstime.com/z/smiling-female-doctor-holding-medical-records-lab-coat-her-office-clipboard-looking-camera-56673035.jpg'); height: 1000%; width: 100%; background-repeat: no-repeat">
+    <div class="col-md-12 p-lg-5 mx-auto my-5 text-left">
+        <h3 class="display-4 font-weight-bold text-left">
+            <br>
+            Knee
+            <br> 
+            Osteoarthritis 
+            <br>
+            Detection
+        </h3>
+        <p class="lead font-weight-normal text-left">A platform to check your knee's Osteoarthritis severity level</p>
+        <a class="btn btn-primary text-left" href="{{ url_for('diagnose_page') }}">Get Started</a>
+    </div>
+    <div class="product-device box-shadow d-none d-md-block"></div>
+    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
+<div class="position-relative overflow-hidden p-1 p-md-2 m-md-1 text-justify bg-light">
+    <br>
+    <h1 style="color:rgb(39, 39, 126);">About The Disease</h1>
+    <br>
+    <div class="row">
+        <div class="align-content-md-start">
+            <img src="https://samitivej-prod-new-website.s3.ap-southeast-1.amazonaws.com/public/uploads/contents/9e48bbd3ca77ce95e851076f8567164e.jpg" style="width:90%; height:100%">
+        </div>
+        <div class="align-content-md-end text-justify">
+            <p>
+                Knee osteoarthritis (OA) is a degenerative knee 
+                <br>
+                joint condition characterized by gradual wear and 
+                <br>
+                strain and loss of articulatory cartilage. It 
+                <br>
+                is typically found in adults. The common clinical 
+                <br>
+                symptoms of knee osteoarthritis include knee pain that 
+                <br>
+                gradually becomes worse over time along with knee stiffness
+                <br> 
+                and swelling, pain after prolonged sitting or resting, and 
+                <br>
+                pain that worsens over time. The severity of the symptoms 
+                <br>
+                may differ from person to person. It affects more than 500 
+                <br>
+                million people which constitutes about 7% of the 
+                <br>
+                world's population with women disproportionately affected 
+                <br>
+                by the condition. From 1990 to 2019, there was a 48% rise 
+                <br>
+                in the cases of osteoarthritis globally, and in 2019 it 
+                <br>
+                accounted for 2% of all years lived with disability (YLDs) 
+                <br>
+                worldwide, ranking as the 15th most common cause of YLDs. 
+            </p>
+        </div>
+    </div>
+</div>      
+<div class="position-relative overflow-hidden p-1 p-md-2 m-md-1 text-justify bg-light">
+    <br>
+    <h1 style="color:rgb(39, 39, 126);">Our Mission</h1>
+    <br>
+    <div class="row">
+        <div class="align-content-md-start">
+            <img src="https://sportssurgeryclinic.com/wp-content/uploads/2016/10/Radiology-Shutterstock.jpg" style="width: 95%; height: 75%">
+        </div>
+        <div class="align-content-md-end text-justify text-justify" style="font-size: 125%;">
+            <p>
+                Our aim is to fabricate a model that will recognize and grade the seriousness of 
+                <br>
+                knee osteoarthritis using deep learning techniques on knee X-ray images. This
+                <br>
+                solutions can potentially enhance the lives of persons affected by this very frequent
+                <br>
+                disease by helping and speeding diagnosis to deploy appropriate countermeasures.
+            </p>
+        </div>
+    </div>
+</div>      
+{% endblock %}
