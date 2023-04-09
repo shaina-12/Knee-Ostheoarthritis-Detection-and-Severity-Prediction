@@ -39,29 +39,29 @@ Diagnosis
    <br>
 </div>
 
-   <div id="content" style="margin-top:2em" class="d-flex justify-content-center">
-      <div>
-         <form id="upload-file" method="post" enctype="multipart/form-data">
-            <label for="imageUpload" class="upload-label">
-               Select your Knee X-Ray Visual
-            </label>
-            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
-         </form>
-         <div class="image-section" style="display:none;">
-            <div class="img-preview">
-               <div id="imagePreview">
-               </div>
-            </div>
-            <div>
-               <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
-            </div>
-         </div>
-         <div class="loader" style="display:none;"></div>
-         <h3 id="result">
-            <span> </span>
-         </h3>
+<form method="POST" enctype="multipart/form-data">
+   <div style="display: flex; align-items: center; flex-direction: column;">
+      <input type="file" id="image-input" name="file" accept=".jpg,.jpeg,.png" onchange="previewImage()">
+      <div style="margin-top: 20px;">
+         <img id="image-preview" src="#" alt="Preview" style="display: none; max-width: 300px; max-height: 300px; margin-right: 20px;">
+         <button id="predict-btn" type="submit" class="btn btn-primary" style="display: none;">Predict!</button>
       </div>
    </div>
+</form>
+
 <br>
 <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+<script>
+   function previewImage() {
+       var reader = new FileReader();
+       reader.onload = function(event) {
+           var img = document.getElementById("image-preview");
+           var btn = document.getElementById("predict-btn");
+           img.src = event.target.result;
+           img.style.display = "inline-block";
+           btn.style.display = "inline-block";
+       };
+       reader.readAsDataURL(event.target.files[0]);
+   }
+</script>
 {% endblock %}

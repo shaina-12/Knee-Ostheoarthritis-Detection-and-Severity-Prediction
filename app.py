@@ -3,7 +3,10 @@ import cv2
 import numpy as np
 #from keras.applications.imagenet_utils import preprocess_input
 from keras.models import load_model
-from keras.preprocessing import image
+
+import keras.utils as image
+# from keras.preprocessing import image
+
 from flask import render_template, redirect, url_for, request
 #from werkzeug.utils import secure_filename
 #from keras.applications.imagenet_utils import decode_predictions
@@ -25,8 +28,12 @@ def model_predict(img_path):
     resized=cv2.resize(gray,(img_size,img_size)) 
     i = image.img_to_array(resized)/255.0
     i = i.reshape(1,img_size,img_size,1)
-    p = enet.predict_classes(i)
-    return dic[p[0]]
+
+    p = (enet.predict(i) > 0.5).astype("int32")
+    # p = enet.predict_classes(i)
+
+    return p
+    # return dic[p[0]]
 
 @app.route('/')
 @app.route('/home')
@@ -35,19 +42,14 @@ def home_page():
 
 @app.route('/diagnosis', methods=['GET','POST'])
 def diagnose_page():
-    return render_template('diagnosis.html')
-
-@app.route('/predict', methods=['GET','POST'])
-def upload():
     if request.method == 'POST':
-        img = request.files['file']
-        img_path = "uploads/" + img.filename    
-        img.save(img_path)
+        file = request.files['file']
+        img_path = "uploads/" + file.filename
+        file.save(img_path)
         p = model_predict(img_path)
         print(p)
         return str(p).lower()
-
-    return None
+    return render_template('diagnosis.html')
 
 @app.route('/team')
 def team_page():
