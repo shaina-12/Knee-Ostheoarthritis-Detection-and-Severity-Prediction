@@ -2,9 +2,8 @@
 This Repository is under development. It will be developed on 7th May 2023.
 # KneeNet
 ## Authors:
-### Shaina Mehta
 ### Anjali Gaur
-### Rakshit Walia
+### Shaina Mehta
 ### 
 ## Submitted To:
 ### Prof. (Dr.) M. Parthasarathi
