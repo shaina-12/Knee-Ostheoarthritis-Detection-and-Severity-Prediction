@@ -5,11 +5,10 @@ This Repository is under development. It will be developed on 7th May 2023.
 ### Shaina Mehta
 ### Anjali Gaur
 ### Rakshit Walia
-### Adil 
-###
 ### 
 ## Submitted To:
 ### Prof. (Dr.) M. Parthasarathi
 ## Guided By:
-### Prof. (Dr.) M. Parthasarathi
+### Prof. (Dr.) M. Parthasarathi, Mr. Dheeraj Mehta, Ms. Shikha Mehta
+## Acknowledgement:
 ## About The Project:
