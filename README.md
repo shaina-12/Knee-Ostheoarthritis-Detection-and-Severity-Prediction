@@ -1,17 +1,18 @@
-# Knee Ostheoarthritis Detection and Severity Prediction Using Machine Learning
+# Knee Ostheoarthritis Detection and Severity Prediction (Using Machine Learning)
 This Repository is under development. It will be developed on 7th May 2023.
 # KneeNet
 ## Authors:
 ### Anjali Gaur
 ### Shaina Mehta
-### 
 ## Submitted To:
 ### Prof. (Dr.) M. Parthasarathi
 ## Guided By:
-###
+### Prof. (Dr.) M. Parthasarathi
 ## Acknowledgement:
-### Unsung Heros of Stack Overflow, Github, NPTEL Course, Wikipedia, Edureka, Coursera, Towards Data Science and other Web Blogs and Youtube Videos.
-### To my friends and juniors - Ms Leah Khan, Mr Rahul Sawhney, Mr Nikhil J. Dutta, Mr Rakshit Walia, Mr Aadil Sehrawat, Mr Venkatesh, Ms Arushi Kumar, Ms Ayushi Pandit, Ms Deepansha Adlakha, Mr Amartya Sumukh Varma, Ms Vanshika Gupta, Ms Harjot Kaur, Ms Prerna Singh, and Ms Tanya Yadav  
+### Unsung Heros of Stack Overflow, Github, NPTEL Course, Wikipedia, Edureka, Coursera, Kaggle, Towards Data Science and other Web Blogs and Youtube Videos.
+### The Project Supervisor and My Project Partner (Anjali Gaur).
+### My Parents and My Grandmother
+### My friends and juniors - Leah Khan, Rahul Sawhney, Nikhil J. Dutta, Rakshit Walia, Aadil Sehrawat, Venkatesh, Arushi Kumar, Ayushi Pandit, Deepansha Adlakha, Amartya Sumukh Varma, Vanshika Gupta, Harjot Kaur, Prerna Singh, Tanya Yadav.
 ## About The Project:
 ## Link of the Dataset:
 https://drive.google.com/drive/folders/12q0klcozfD8y6Vj8BhNwBBpHb6lrJNSZ?usp=sharing
