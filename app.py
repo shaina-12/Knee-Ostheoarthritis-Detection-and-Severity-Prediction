@@ -135,10 +135,10 @@ def home_page():
 def diagnose_page():
     if request.method == 'POST':
         file = request.files['file']
-        img_path = "uploads/" + file.filename
+        img_path = "static/uploads/" + file.filename
         file.save(img_path)
         p = model_predict(img_path)
-        return render_template('diagnosis.html',prediction_text=p)
+        return render_template('diagnosis.html', prediction_text=p, image_path = img_path)
     return render_template('diagnosis.html')
 
 @app.route('/team')
