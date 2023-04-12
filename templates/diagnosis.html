@@ -48,7 +48,19 @@ Diagnosis
       </div>
    </div>
 </form>
-{{ prediction_text }}
+
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+   {% if prediction_text %}
+   <div style="width: fit-content; border: 2px solid; border-color: rgba(0, 0, 0, 0.7); border-radius: 10px;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+         <span style="font-weight: 600; font-size: larger;">Prediction: {{prediction_text}}</span>
+         {% if image_path %}<img style="width: 1000x; padding: 10px;" src="{{image_path}}" alt="Prediction Image">{% endif %}
+      </div>
+      {% endif %}
+   </div>
+</div>
+
+
 <br>
 <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
 <script>
