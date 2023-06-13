@@ -6,34 +6,20 @@ Diagnosis
 <br>
 <h2 style="text-align: center; color: rgb(30, 30, 157); font-weight: bold">Diagnosis</h2>
 <p style="text-align: center; color:rgb(151, 154, 221); font-weight: bold">Please refer to the instructions given below and upload the X-ray images accordingly to get the result of the diagnosis.</p>
+<p style="text-align: center; color:rgb(151, 154, 221); font-weight: bold">Note: This system will give brief idea about the severity level of Knee Osteoarthritis but not the accurate grade of its severity. For better diagnosis we will recommend to consult to the doctor.</p>
 <div class="container">
    <br>
    <h3 style="text-align: justify; color: rgb(108, 50, 202); font-weight: bold">Instructions</h3>
    <br>
    <ul>
       <li>
-         <p> Step 1: Creation of metadata by retrieving the path of the image files.</p>
+         <p> Step 1: Take the radiographs of the Knee which has AnteroPosterior (AP) view and crop the knee portion and resize it to 299x299 pixles.</p>
       </li>
       <li>
-         <p> Step 2: Resize the images to the size of 256x256 pixels and the performing centre crop to crop the image to the size of 224x224.</p>
+         <p> Step 2: Click on the 'Choose File' button given after the instruction and upload the cropped Knee Radiographs from your local machine.</p>
       </li>
       <li>
-         <p> Step 3: Converting the image to the tensors and performing normalization on it.</p>
-      </li>
-      <li>
-         <p> Step 4: Loading the pre-trained MobileNetV2 model.</p>
-      </li>
-      <li>
-         <p> Step 5: Setting the batch size as 32, and the learning rate as 0.00001, and using the StepLR Scheduler and Adam Optimizer Function and Cross Entropy Loss as a loss function.</p>
-      </li>
-      <li>
-         <p> Step 6: Training the Model to 10 epochs, saving the best model, drawing the training and validation accuracy and loss curve, confusion matrix, and classification report for training and testing data.</p>
-      </li>
-      <li>
-         <p> Step 7: In this project, the detection of knee osteoarthritis and classified its severity levels according to the KL grading system have been performed using the lightweight pre-trained CNN model named MobileNetV2.</p>
-      </li>
-      <li>
-         <p> Step 8: The model is trained on 10 epochs having a batch size of 32 using the Adam optimizer, using Cross-Entropy loss as a loss function and Step Learning Rate Scheduler to monitor and control its learning rate and its accuracy and its weighted precision, recall, and F1 scores are calculated.</p>
+         <p> Step 3: After uploading the radiographs, click on the 'Predict' button.</p>
       </li>
    </ul>
    <br>
