@@ -5,9 +5,9 @@ This Repository is under development. It will be developed on 7th May 2023.
 ### Anjali Gaur
 ### Shaina Mehta
 ## Submitted To:
-### Prof. (Dr.) M. Parthasarathi
+### Prof. (Dr.) M. Partha Sarathi
 ## Guided By:
-### Prof. (Dr.) M. Parthasarathi
+### Prof. (Dr.) M. Partha Sarathi
 ## Acknowledgement:
 ### Unsung Heros of Stack Overflow, Github, NPTEL Course, Wikipedia, Edureka, Coursera, Kaggle, Towards Data Science and other Web Blogs and Youtube Videos.
 ### The Project Supervisor and My Project Partner (Anjali Gaur).
