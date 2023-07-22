@@ -1,6 +1,4 @@
-# Knee Ostheoarthritis Detection and Severity Prediction (Using Machine Learning)
-This Repository is under development. It will be developed on 7th May 2023.
-# KneeNet
+# Knee Osteoarthritis Detection and Severity Prediction (Using Machine Learning)
 ## Authors:
 ### Anjali Gaur
 ### Shaina Mehta
@@ -16,7 +14,7 @@ This Repository is under development. It will be developed on 7th May 2023.
 ## About The Project:
 ### This project has the following objectives: 
 #### 1. To make a Deep Learning model that will identify and assess the severity of knee osteoarthritis using Residual Networks.
-#### 2.To develop a website in HTML, Bootstrap CSS, JavaScript, and Python will serve as a demonstration of the achieved outcome.
+#### 2. Developing a website in HTML, Bootstrap CSS, JavaScript, and Python will serve as a demonstration of the achieved outcome.
 ## Link of the Dataset:
 https://drive.google.com/drive/folders/12q0klcozfD8y6Vj8BhNwBBpHb6lrJNSZ?usp=sharing
 ## Link of the Code of Image Processing and Machine Learning Pipeline:
