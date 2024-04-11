@@ -19,3 +19,6 @@
 https://drive.google.com/drive/folders/12q0klcozfD8y6Vj8BhNwBBpHb6lrJNSZ?usp=sharing
 ## Link of the Code of Image Processing and Machine Learning Pipeline:
 https://github.com/shaina-12/KneeNet.git
+## Link of Research Paper:
+https://ieeexplore.ieee.org/abstract/document/10306649
+Correction Needed in the Paper = Instead of 7096 images, 7060 images are used for training, validation and testing.
